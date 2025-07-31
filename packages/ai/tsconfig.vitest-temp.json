@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": [
+      "@types/node",
+      "vitest/globals"
+    ],
+    "target": "ES2018",
+    "stripInternal": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "rootDir": "./",
+    "outDir": "./dist",
+    "emitDeclarationOnly": false,
+    "incremental": true,
+    "tsBuildInfoFile": "/Users/max/Desktop/vercel-ai-sdk-extended/ai/node_modules/.pnpm/vitest@2.1.4_@edge-runtime+vm@5.0.0_@types+node@22.7.4_jsdom@26.0.0_less@4.2.2_msw@2.7._4876a83dd02fb6198497b07df6c8b5fe/node_modules/vitest/dist/chunks/tsconfig.tmp.tsbuildinfo"
+  },
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "tsup.config.ts",
+    "internal.d.ts",
+    "mcp-stdio.d.ts",
+    "test.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../provider"
+    },
+    {
+      "path": "../provider-utils"
+    },
+    {
+      "path": "../gateway"
+    }
+  ]
+}

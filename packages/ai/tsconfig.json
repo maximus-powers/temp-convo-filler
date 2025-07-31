@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": false,
+    "stripInternal": true,
+    "types": ["@types/node"],
+    "composite": false,
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "exclude": [
+    "dist",
+    "build", 
+    "node_modules",
+    "tsup.config.ts",
+    "internal.d.ts",
+    "mcp-stdio.d.ts",
+    "test.d.ts"
+  ]
+}

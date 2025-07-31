@@ -1,0 +1,170 @@
+
+> shadcn-ui-monorepo@0.0.1 dev /Users/max/Desktop/convo-filler-demo/convo-filler-ts
+> turbo dev
+
+turbo 2.4.2
+
+• Packages in scope: @ai-sdk/gateway, @ai-sdk/provider, @ai-sdk/provider-utils, @vercel/ai-tsconfig, @workspace/eslint-config, @workspace/typescript-config, @workspace/ui, ai, tgi-server, web
+• Running dev in 10 packages
+• Remote caching disabled
+tgi-server:dev: cache bypass, force executing fb92c2b917a86e24
+web:dev: cache bypass, force executing 90a2fcbf3ebca8f5
+tgi-server:dev: 
+tgi-server:dev: > tgi-server@1.0.0 dev /Users/max/Desktop/convo-filler-demo/convo-filler-ts/apps/tgi-server
+tgi-server:dev: > ./start-server.sh
+tgi-server:dev: 
+web:dev: 
+web:dev: > web@0.0.1 dev /Users/max/Desktop/convo-filler-demo/convo-filler-ts/apps/web
+web:dev: > next dev --turbopack
+web:dev: 
+tgi-server:dev: 🚀 Starting TGI server...
+tgi-server:dev: Model: maximuspowers/smollm-convo-filler
+tgi-server:dev: Port: 8081
+tgi-server:dev: Host: 0.0.0.0
+tgi-server:dev: 🔥 Launching TGI server...
+tgi-server:dev: [2m2025-07-29T04:57:35.506755Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Args {
+tgi-server:dev:     model_id: "maximuspowers/smollm-convo-filler",
+tgi-server:dev:     revision: None,
+tgi-server:dev:     validation_workers: 2,
+tgi-server:dev:     sharded: None,
+tgi-server:dev:     num_shard: None,
+tgi-server:dev:     quantize: None,
+tgi-server:dev:     speculate: None,
+tgi-server:dev:     dtype: None,
+tgi-server:dev:     kv_cache_dtype: None,
+tgi-server:dev:     trust_remote_code: true,
+tgi-server:dev:     max_concurrent_requests: 128,
+tgi-server:dev:     max_best_of: 2,
+tgi-server:dev:     max_stop_sequences: 4,
+tgi-server:dev:     max_top_n_tokens: 5,
+tgi-server:dev:     max_input_tokens: None,
+tgi-server:dev:     max_input_length: None,
+tgi-server:dev:     max_total_tokens: None,
+tgi-server:dev:     waiting_served_ratio: 0.3,
+tgi-server:dev:     max_batch_prefill_tokens: None,
+tgi-server:dev:     max_batch_total_tokens: None,
+tgi-server:dev:     max_waiting_tokens: 20,
+tgi-server:dev:     max_batch_size: None,
+tgi-server:dev:     cuda_graphs: None,
+tgi-server:dev:     hostname: "0.0.0.0",
+tgi-server:dev:     port: 8081,
+tgi-server:dev:     prometheus_port: 9000,
+tgi-server:dev:     shard_uds_path: "/tmp/text-generation-server",
+tgi-server:dev:     master_addr: "localhost",
+tgi-server:dev:     master_port: 29500,
+tgi-server:dev:     huggingface_hub_cache: None,
+tgi-server:dev:     weights_cache_override: None,
+tgi-server:dev:     disable_custom_kernels: false,
+tgi-server:dev:     cuda_memory_fraction: 1.0,
+tgi-server:dev:     rope_scaling: None,
+tgi-server:dev:     rope_factor: None,
+tgi-server:dev:     json_output: false,
+tgi-server:dev:     otlp_endpoint: None,
+tgi-server:dev:     otlp_service_name: "text-generation-inference.router",
+tgi-server:dev:     cors_allow_origin: [],
+tgi-server:dev:     api_key: None,
+tgi-server:dev:     watermark_gamma: None,
+tgi-server:dev:     watermark_delta: None,
+tgi-server:dev:     ngrok: false,
+tgi-server:dev:     ngrok_authtoken: None,
+tgi-server:dev:     ngrok_edge: None,
+tgi-server:dev:     tokenizer_config_path: None,
+tgi-server:dev:     disable_grammar_support: false,
+tgi-server:dev:     env: false,
+tgi-server:dev:     max_client_batch_size: 4,
+tgi-server:dev:     lora_adapters: None,
+tgi-server:dev:     usage_stats: On,
+tgi-server:dev:     payload_limit: 2000000,
+tgi-server:dev:     enable_prefill_logprobs: false,
+tgi-server:dev:     graceful_termination_timeout: 90,
+tgi-server:dev: }
+tgi-server:dev: [2m2025-07-29T04:57:35.506797Z[0m [32m INFO[0m [2mhf_hub[0m[2m:[0m Using token file found "/Users/max/.cache/huggingface/token"    
+web:dev:    ▲ Next.js 15.2.3 (Turbopack)
+web:dev:    - Local:        http://localhost:3000
+web:dev:    - Network:      http://10.89.112.45:3000
+web:dev:    - Environments: .env.local
+web:dev: 
+web:dev:  ✓ Starting...
+tgi-server:dev: [2m2025-07-29T04:57:36.252419Z[0m [33m WARN[0m [2mtext_generation_launcher::gpu[0m[2m:[0m Cannot determine GPU compute capability: AssertionError: Torch not compiled with CUDA enabled
+tgi-server:dev: [2m2025-07-29T04:57:36.252435Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Using attention flashinfer - Prefix caching true
+tgi-server:dev: [2m2025-07-29T04:57:36.254873Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Default `max_batch_prefill_tokens` to 2048
+tgi-server:dev: [2m2025-07-29T04:57:36.254884Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Using default cuda graphs [1, 2, 4, 8, 16, 32]
+tgi-server:dev: [2m2025-07-29T04:57:36.254894Z[0m [33m WARN[0m [2mtext_generation_launcher[0m[2m:[0m `trust_remote_code` is set. Trusting that model `maximuspowers/smollm-convo-filler` do not contain malicious code.
+tgi-server:dev: [2m2025-07-29T04:57:36.254964Z[0m [32m INFO[0m [1mdownload[0m: [2mtext_generation_launcher[0m[2m:[0m Starting check and download process for maximuspowers/smollm-convo-filler
+web:dev:  ✓ Ready in 1014ms
+tgi-server:dev: [2m2025-07-29T04:57:39.023410Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Files are already present on the host. Skipping download.
+tgi-server:dev: [2m2025-07-29T04:57:39.448553Z[0m [32m INFO[0m [1mdownload[0m: [2mtext_generation_launcher[0m[2m:[0m Successfully downloaded weights for maximuspowers/smollm-convo-filler
+tgi-server:dev: [2m2025-07-29T04:57:39.448894Z[0m [32m INFO[0m [1mshard-manager[0m: [2mtext_generation_launcher[0m[2m:[0m Starting shard [2m[3mrank[0m[2m=[0m0[0m
+tgi-server:dev: [2m2025-07-29T04:57:41.817405Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Using prefix caching = True
+tgi-server:dev: [2m2025-07-29T04:57:41.817427Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Using Attention = flashinfer
+tgi-server:dev: [2m2025-07-29T04:57:41.908847Z[0m [33m WARN[0m [2mtext_generation_launcher[0m[2m:[0m Could not import Flash Attention enabled models: System cpu doesn't support flash/paged attention
+tgi-server:dev: [2m2025-07-29T04:57:41.909603Z[0m [33m WARN[0m [2mtext_generation_launcher[0m[2m:[0m Could not import Mamba: No module named 'mamba_ssm'
+tgi-server:dev: [2m2025-07-29T04:57:41.910488Z[0m [33m WARN[0m [2mtext_generation_launcher[0m[2m:[0m Could not import Flash Transformers Backend: System cpu doesn't support flash/paged attention
+web:dev:  ○ Compiling /api/chat ...
+tgi-server:dev: [2m2025-07-29T04:57:43.051446Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Using prefill chunking = False
+tgi-server:dev: [2m2025-07-29T04:57:43.053437Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Server started at unix:///tmp/text-generation-server-0
+tgi-server:dev: [2m2025-07-29T04:57:43.149841Z[0m [32m INFO[0m [1mshard-manager[0m: [2mtext_generation_launcher[0m[2m:[0m Shard ready in 3.696358625s [2m[3mrank[0m[2m=[0m0[0m
+tgi-server:dev: [2m2025-07-29T04:57:43.240620Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Starting Webserver
+web:dev:  ✓ Compiled /api/chat in 916ms
+tgi-server:dev: [2m2025-07-29T04:57:43.261177Z[0m [32m INFO[0m [2mtext_generation_router_v3[0m[2m:[0m [2mbackends/v3/src/lib.rs[0m[2m:[0m[2m125:[0m Warming up model
+web:dev: Chat API called
+web:dev: Received messages: [
+web:dev:   {
+web:dev:     "role": "user",
+web:dev:     "content": "What is machine learning?"
+web:dev:   }
+web:dev: ]
+web:dev: [DEBUG] Creating natural text model...
+web:dev: [DEBUG] Creating wrapped model with streamNaturalText middleware...
+web:dev: 🚨🚨🚨 MIDDLEWARE FUNCTION CALLED - UPDATED VERSION 🚨🚨🚨
+web:dev: [DEBUG] Wrapped model created successfully
+web:dev: [DEBUG] Natural text model created, calling streamText...
+web:dev: Chat API error: TypeError: Cannot read properties of undefined (reading 'filter')
+web:dev:     at convertToModelMessages (../../packages/ai/src/ui/convert-to-model-messages.ts:65:13)
+web:dev:     at POST (app/api/chat/route.ts:82:39)
+web:dev:   63 |           role: 'user',
+web:dev:   64 |           content: message.parts
+web:dev: > 65 |             .filter(
+web:dev:      |             ^
+web:dev:   66 |               (part): part is TextUIPart | FileUIPart =>
+web:dev:   67 |                 part.type === 'text' || part.type === 'file',
+web:dev:   68 |             )
+web:dev:  POST /api/chat 500 in 1242ms
+tgi-server:dev: [2m2025-07-29T04:57:46.131982Z[0m [33m WARN[0m [2mtext_generation_router_v3[0m[2m:[0m [2mbackends/v3/src/lib.rs[0m[2m:[0m[2m79:[0m Model does not support automatic max batch total tokens
+tgi-server:dev: [2m2025-07-29T04:57:46.131997Z[0m [32m INFO[0m [2mtext_generation_router_v3[0m[2m:[0m [2mbackends/v3/src/lib.rs[0m[2m:[0m[2m137:[0m Setting max batch total tokens to 16000
+tgi-server:dev: [2m2025-07-29T04:57:46.132036Z[0m [32m INFO[0m [2mtext_generation_router_v3[0m[2m:[0m [2mbackends/v3/src/lib.rs[0m[2m:[0m[2m166:[0m Using backend V3
+tgi-server:dev: [2m2025-07-29T04:57:46.132039Z[0m [32m INFO[0m [2mtext_generation_router[0m[2m:[0m [2mbackends/v3/src/main.rs[0m[2m:[0m[2m165:[0m Maximum input tokens defaulted to 2047
+tgi-server:dev: [2m2025-07-29T04:57:46.132041Z[0m [32m INFO[0m [2mtext_generation_router[0m[2m:[0m [2mbackends/v3/src/main.rs[0m[2m:[0m[2m171:[0m Maximum total tokens defaulted to 2048
+tgi-server:dev: [2m2025-07-29T04:57:46.132066Z[0m [32m INFO[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m1585:[0m Using the Hugging Face API
+tgi-server:dev: [2m2025-07-29T04:57:46.132122Z[0m [32m INFO[0m [2mhf_hub[0m[2m:[0m [2m/Users/max/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hf-hub-0.4.2/src/lib.rs[0m[2m:[0m[2m72:[0m Using token file found "/Users/max/.cache/huggingface/token"    
+tgi-server:dev: [2m2025-07-29T04:57:46.911580Z[0m [32m INFO[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m2341:[0m Serving revision 5f047cce8301648ec672a1562dc2effa77b94ff0 of model maximuspowers/smollm-convo-filler
+tgi-server:dev: [2m2025-07-29T04:57:46.911663Z[0m [33m WARN[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m1673:[0m Tokenizer_config None - Some("/Users/max/.cache/huggingface/hub/models--maximuspowers--smollm-convo-filler/snapshots/5f047cce8301648ec672a1562dc2effa77b94ff0/tokenizer_config.json")
+tgi-server:dev: [2m2025-07-29T04:57:46.920267Z[0m [31mERROR[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m1697:[0m Failed to import python tokenizer ModuleNotFoundError: No module named 'transformers'
+tgi-server:dev: [2m2025-07-29T04:57:46.920276Z[0m [33m WARN[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m1464:[0m Odd tokenizer detected, falling back on legacy tokenization
+tgi-server:dev: [2m2025-07-29T04:57:46.920348Z[0m [32m INFO[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m1741:[0m Using config Some(Llama)
+tgi-server:dev: [2m2025-07-29T04:57:47.121613Z[0m [32m INFO[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m2298:[0m Connected
+tgi-server:dev: [2m2025-07-29T04:57:47.121677Z[0m [31mERROR[0m [2mtext_generation_router::server[0m[2m:[0m [2mrouter/src/server.rs[0m[2m:[0m[2m2321:[0m Failed to bind to 0.0.0.0:8081: Address already in use (os error 48)
+tgi-server:dev: 
+tgi-server:dev: thread 'tokio-runtime-worker' panicked at router/src/validation.rs:512:14:
+tgi-server:dev: Failure in python tokenizer worker: PyErr { type: <class 'ModuleNotFoundError'>, value: ModuleNotFoundError("No module named 'transformers'"), traceback: None }
+tgi-server:dev: note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+tgi-server:dev: Error: WebServer(Axum(Os { code: 48, kind: AddrInUse, message: "Address already in use" }))
+tgi-server:dev: [2m2025-07-29T04:57:47.140351Z[0m [31mERROR[0m [2mtext_generation_launcher[0m[2m:[0m Webserver Crashed
+tgi-server:dev: [2m2025-07-29T04:57:47.140370Z[0m [32m INFO[0m [2mtext_generation_launcher[0m[2m:[0m Shutting down shards
+tgi-server:dev: [2m2025-07-29T04:57:47.238313Z[0m [32m INFO[0m [1mshard-manager[0m: [2mtext_generation_launcher[0m[2m:[0m Terminating shard [2m[3mrank[0m[2m=[0m0[0m
+tgi-server:dev: [2m2025-07-29T04:57:47.238390Z[0m [32m INFO[0m [1mshard-manager[0m: [2mtext_generation_launcher[0m[2m:[0m Waiting for shard to gracefully shutdown [2m[3mrank[0m[2m=[0m0[0m
+tgi-server:dev: [2m2025-07-29T04:57:48.053424Z[0m [32m INFO[0m [1mshard-manager[0m: [2mtext_generation_launcher[0m[2m:[0m shard terminated [2m[3mrank[0m[2m=[0m0[0m
+tgi-server:dev: Error: WebserverFailed
+tgi-server:dev:  ELIFECYCLE  Command failed with exit code 1.
+tgi-server:dev:  WARN   Local package.json exists, but node_modules missing, did you mean to install?
+tgi-server:dev: ERROR: command finished with error: command (/Users/max/Desktop/convo-filler-demo/convo-filler-ts/apps/tgi-server) /Users/max/Library/pnpm/.tools/pnpm/10.4.1/bin/pnpm run dev exited (1)
+web:dev: [?25h
+tgi-server#dev: command (/Users/max/Desktop/convo-filler-demo/convo-filler-ts/apps/tgi-server) /Users/max/Library/pnpm/.tools/pnpm/10.4.1/bin/pnpm run dev exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    16.248s 
+Failed:    tgi-server#dev
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

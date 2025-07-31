@@ -1,0 +1,10 @@
+packages:
+  - "apps/*"
+  - "packages/ui"
+  - "packages/eslint-config"
+  - "packages/typescript-config"
+  - "packages/ai"
+  - "packages/gateway"
+  - "packages/provider"
+  - "packages/provider-utils"
+  - "packages/ai-tsconfig"

@@ -1,0 +1,52 @@
+
+> web@0.0.1 dev
+> next dev --turbopack
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+   ▲ Next.js 15.2.3 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://10.89.112.45:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 607ms
+ ○ Compiling /chat ...
+ ✓ Compiled /chat in 1001ms
+ GET /chat 200 in 1181ms
+ ✓ Compiled /_not-found/page in 351ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 391ms
+ ✓ Compiled /api/chat in 288ms
+Chat API called
+Received messages: [
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "Hey"
+      }
+    ],
+    "id": "9CAlEfA0YER7lp4b",
+    "role": "user"
+  }
+]
+Streaming result created, returning response
+ POST /api/chat 200 in 12176ms
+ GET /chat 200 in 36ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 45ms
+ ✓ Compiled /favicon.ico in 224ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 255ms
+Chat API called
+Received messages: [
+  {
+    "parts": [
+      {
+        "type": "text",
+        "text": "tell me some fun facts"
+      }
+    ],
+    "id": "xGcE8a0877bJQ2tN",
+    "role": "user"
+  }
+]
+Streaming result created, returning response
+ POST /api/chat 200 in 14816ms
